@@ -50,6 +50,8 @@ if (-not (Get-Command "winget" -ErrorAction SilentlyContinue)) {
     } else {
         $installOk = $false
     }
+} else {
+    Write-Host "Winget installert."
 }
 
 # Sjekker at all krav er møtt
@@ -62,7 +64,7 @@ if ($installOk -eq $true) {
     }
 
     Write-Host "Fortsetter med installasjon..."
-    Write-Output "Installerer programmer"
+    Write-Host "Installerer programmer"
 
     $apps = @(
         @{name = "Google.Chrome" },
