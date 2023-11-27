@@ -44,9 +44,9 @@ if (-not (Get-Command "winget" -ErrorAction SilentlyContinue)) {
         Invoke-WebRequest -Uri $wingetLink -OutFile "$env:TEMP\winget-installer.msixbundle"
         Add-AppxPackage -Path "$env:TEMP\winget-installer.msixbundle" -ForceUpdateFromAnyVersion -ForceTargetApplicationShutdown
         winget source reset --force
-	    winget source update
-	    winget upgrade --all
-	    Write-Host "Winget installert."
+        winget source update
+        winget upgrade --all
+        Write-Host "Winget installert."
     } else {
         $installOk = $false
     }
