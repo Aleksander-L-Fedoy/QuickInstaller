@@ -7,5 +7,6 @@ echo Avinstallerer programmer...
 winget uninstall Google.Chrome
 winget uninstall Microsoft.VisualStudioCode
 winget uninstall TIDAL
+REM Legg til progammene du ønsker å avinstallere her
 
 echo Ferdig med avinstallasjonen!

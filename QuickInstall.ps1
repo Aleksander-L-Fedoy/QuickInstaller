@@ -70,6 +70,7 @@ if ($installOk -eq $true) {
         @{name = "Google.Chrome" },
         @{name = "Microsoft.VisualStudioCode" },
         @{name = "TIDALMusicAS.TIDAL" }
+        # Legg til dine apper her
     )
 
     Foreach ($app in $apps) {
