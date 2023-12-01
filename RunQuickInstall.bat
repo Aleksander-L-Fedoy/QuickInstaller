@@ -14,8 +14,11 @@ powershell -Command "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Rem
 REM Viser den fullstendige stien til PowerShell-scriptet
 echo C:\Users\%TargetUsername%\Desktop\QuickInstall.ps1
 
-REM Kjører PowerShell-scriptet
+REM Kjører QuickInstall-scriptet
 powershell -File "C:\Users\%TargetUsername%\Desktop\QuickInstall.ps1"
+
+REM Kjører PackageInstall-scriptet
+powershell -File "C:\Users\%TargetUsername%\Desktop\PackageInstall.ps1"
 
 REM Tilbakestiller Execution Policy til den opprinnelige verdien
 powershell -Command "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy %OldPolicy% -Force"

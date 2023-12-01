@@ -1,10 +1,10 @@
 # QuickInstaller
 
 ## Beskrivelse
-QuickInstaller er et sett med skript utviklet for å automatisere installasjonen (og avinstellasjon) av ønsket programvare på Windows-maskiner. Dette prosjektet inneholder to hovedskript: `RunQuickInstall.bat` og `QuickInstall.ps1`, som sammen sørger for en effektiv og brukervennlig installasjonsprosess. Prosjektet inneholder også et avinstellasjons-skript: `CleanUninstall.bat` som kan brukes for å raskt og effektiv avinstallere samme eller ønskete programvare.
+QuickInstaller er et sett med skript utviklet for å automatisere installasjonen (og avinstellasjon) av ønsket programvare på Windows-maskiner. Dette prosjektet inneholder tre hovedskript: `RunQuickInstall.bat`, `QuickInstall.ps1` og `PackageInstall.ps1`, som sammen sørger for en effektiv og brukervennlig installasjonsprosess. Prosjektet inneholder også et avinstellasjons-skript: `CleanUninstall.bat` som kan brukes for å raskt og effektiv avinstallere samme eller ønskete programvare.
 
 ## Hvordan Bruke `QuickInstall`-skriptene
-1. Last ned begge skriptene (`RunQuickInstall.bat` og `QuickInstall.ps1`) til samme mappe.
+1. Last ned de tre skriptene (`RunQuickInstall.bat`, `QuickInstall.ps1` og `PackageInstall.ps1`) til samme mappe.
 2. Åpne `QuickInstall.ps1` i en teksteditor og legg til ønskete programmer i listen over `$apps`:
 ```ps1
     $apps = @(
@@ -14,9 +14,10 @@ QuickInstaller er et sett med skript utviklet for å automatisere installasjonen
         # Legg til dine apper her
     )
 ```
-3. Kjør `RunQuickInstall.bat` (muligens som administrator).
-4. Skriv inn ditt brukernavn når du blir bedt om det og svar `Y` når du blir bedt om det.
-5. Skriptet vil automatisk sjekke systemkrav og installere valgte programmer.
+3. Åpne `PackageInstall.ps1` i en teksteditor og legg til ønskete pakkene dine.
+4. Kjør `RunQuickInstall.bat` (muligens som administrator).
+5. Skriv inn ditt brukernavn når du blir bedt om det og svar `Y` når du blir bedt om det.
+6. Skriptet vil automatisk sjekke systemkrav og installere valgte programmer og pakker.
 
 ## Hvordan Bruke `CleanUninstall`-skriptet
 1. Last ned skripet til din datamaskin
