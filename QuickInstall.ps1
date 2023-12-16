@@ -71,6 +71,15 @@ if ($installOk -eq $true) {
         @{name = "Microsoft.VisualStudioCode" },
         @{name = "TIDALMusicAS.TIDAL" }
         # ,@{name = "OpenJS.NodeJS" }
+        # ,@{name = "Git.Git" }
+        # ,@{name = "Python.Python.3.11" }
+
+        # ,@{name = "RARLab.WinRAR" }
+        # ,@{name = "VideoLAN.VLC" }
+        # ,@{name = "EclipseAdoptium.Temurin.21.JDK" }
+        # ,@{name = "EclipseAdoptium.Temurin.21.JDK" }
+        # ,@{name = "EclipseAdoptium.Temurin.21.JDK" }
+
         # Legg til dine apper her
     )
 
