@@ -77,8 +77,6 @@ if ($installOk -eq $true) {
         # ,@{name = "RARLab.WinRAR" }
         # ,@{name = "VideoLAN.VLC" }
         # ,@{name = "EclipseAdoptium.Temurin.21.JDK" }
-        # ,@{name = "EclipseAdoptium.Temurin.21.JDK" }
-        # ,@{name = "EclipseAdoptium.Temurin.21.JDK" }
 
         # Legg til dine apper her
     )
