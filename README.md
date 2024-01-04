@@ -1,7 +1,7 @@
 # QuickInstaller
 
 ## Beskrivelse
-QuickInstaller er et sett med skript utviklet for å automatisere installasjonen (og avinstellasjon) av ønsket programvare på Windows-maskiner. Dette prosjektet inneholder tre hovedskript: `RunQuickInstall.bat`, `QuickInstall.ps1` og `PackageInstall.ps1`, som sammen sørger for en effektiv og brukervennlig installasjonsprosess. Prosjektet inneholder også et avinstellasjons-skript: `CleanUninstall.bat` som kan brukes for å raskt og effektiv avinstallere samme eller ønskete programvare.
+QuickInstaller er et sett med skript utviklet for å automatisere installasjonen (og avinstellasjon) av ønsket programvare på Windows-maskiner. Dette prosjektet inneholder tre hovedskript: `RunQuickInstall.bat`, `QuickInstall.ps1` og `PackageInstall.ps1`, som sammen sørger for en effektiv og brukervennlig installasjonsprosess. Prosjektet inneholder også et avinstellasjons-skript: `CleanUninstall.bat` som kan brukes for å raskt og effektiv avinstallere samme eller ønskete programvare. I tillegg inneholder det en markdown fil for hjelp til installasjon av programvare på Windows Subsystem for Linux (WSL): [wsl-guide](ubuntu_wsl_software_installation_guide.md).
 
 ## Hvordan Bruke `QuickInstall`-skriptene
 1. Last ned de tre skriptene (`RunQuickInstall.bat`, `QuickInstall.ps1` og `PackageInstall.ps1`) til samme mappe.

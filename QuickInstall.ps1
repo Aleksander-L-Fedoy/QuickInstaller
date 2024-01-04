@@ -15,6 +15,15 @@ if ($osVersion.Major -lt 10) {
     Write-Host "Windows-versjon ok."
 }
 
+$userChoice = Read-Host "Kjører du skriptet for første gang? (Y/N)"
+    if ($userChoice -eq 'Y') {
+        Write-Host "Vennligst installer/oppdater Microsoft App Installer fra Microsoft Store:"
+        Write-Host "https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1"
+        $installOk = $false
+        $userChoice = Read-Host "Ferdig? (Y/N)"
+        exit
+    }
+
 Write-Host "Sjekker om Microsoft App Installer er installert"
 $appInstaller = Get-AppxPackage -Name "*AppInstaller*"
 if (-not $appInstaller) {
@@ -70,15 +79,17 @@ if ($installOk -eq $true) {
         @{name = "Google.Chrome" },
         @{name = "Microsoft.VisualStudioCode" },
         @{name = "TIDALMusicAS.TIDAL" }
-        # ,@{name = "OpenJS.NodeJS" }
+        # ,@{name = "OpenJS.NodeJS.LTS" }
         # ,@{name = "Git.Git" }
         # ,@{name = "Python.Python.3.11" }
-
         # ,@{name = "RARLab.WinRAR" }
         # ,@{name = "VideoLAN.VLC" }
         # ,@{name = "EclipseAdoptium.Temurin.21.JDK" }
+        # ,@{name = "Rainmeter.Rainmeter" }
+        # ,@{name = "Microsoft.PowerShell" }
+        # ,@{name = "StartIsBack.StartAllBack" }
 
-        # Legg til dine apper her
+        # Legg til flere apper her
     )
 
     Foreach ($app in $apps) {
